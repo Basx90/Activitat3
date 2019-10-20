@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/cabecera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="10dp"
+        android:text="Posición de número primo."
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cabecera"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:text="Introduce posición:"
+        android:textColor="#050505"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/introposicion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/cabecera"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="número"
+        />
+
+    <TextView
+        android:id="@+id/texto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/cabecera"
+        android:text="El número primo en esta posición es:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cabecera"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Resultado"
+        android:paddingLeft="10dp"
+        android:textColor="#111111"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cabecera"
+        android:layout_marginHorizontal="110dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/mybutton"
+        android:text="CALCULAR"
+        android:textColor="#050505"
+        android:textSize="30sp" />
+
+
+</LinearLayout>
